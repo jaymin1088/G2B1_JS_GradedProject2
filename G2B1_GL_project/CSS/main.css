@@ -1,65 +1,56 @@
-*{
-  padding: 0px;
-  margin: 0px;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-body{
-  height: auto;
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
-p{
+.top-nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+p {
   text-align: justify;
 }
 
-.navigation{
+.navigation {
   margin-top: 10px;
   display: flex;
-  column-gap: 10vw;
+  gap: 1rem;
 }
 
-input{
+input {
   width: 15vw;
   min-width: 120px;
 }
 
-.resumebox{
+.resumebox {
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
   margin-top: 10px;
-  
   height: auto;
   width: 70vw;
   display: grid;
-  grid-template-areas: 
-  "header header header"
-  "sidebar content content"
-  "sidebar content content"
-  ;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "sidebar content content";
   grid-template-rows: 150px 1fr;
   grid-template-columns: 20vw 1fr;
 }
 
-.header{
+.header {
   grid-area: header;
-}
-
-.sidebar{
-  grid-area: sidebar;
-}
-
-.content{
-
-  grid-area: content;
-}
-
-
-
-.header{
   display: flex;
   justify-content: center;
   background-color: rgb(205, 244, 246);
@@ -71,14 +62,12 @@ input{
   align-items: center;
   row-gap: 20px;
   width: 1000px;
-  margin-left:100px ;
+  margin-left: 100px;
   margin-top: 1vh;
-;
   justify-content: center;
 }
 
 .apply {
-
   text-align: center;
 }
 
@@ -87,9 +76,9 @@ img {
   width: 85px;
 }
 
-.image{
+.image {
   margin-top: 3vh;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 40px;
 }
 
@@ -103,7 +92,7 @@ img {
   padding: 5%;
 }
 
-.info p , .info a{
+.info p, .info a {
   text-align: end;
 }
 
@@ -112,95 +101,91 @@ img {
   background-color: rgb(172, 168, 168);
 }
 
-.main{
+.main {
   padding-top: 1%;
   padding-right: 8%;
 }
 
-.main p , .main li{
+.main p, .main li {
   margin-left: 9%;
   margin-top: 1px;
   margin-bottom: 1px;
 }
 
-button{
+button {
   width: 75px;
-  padding: 2px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-.work p{
+button:hover {
+  background-color: #0056b3;
+}
+
+.work p {
   margin-bottom: 10px;
 }
- 
-.content h2{
+
+.content h2 {
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.errorpage{
+.errorpage {
   outline: 1px solid black;
   height: 150px;
   width: 1000px;
   font-size: 30px;
   margin-top: 50px;
-  column-gap: 100px;
+  gap: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header p , .AppliedFor{
+.header p, .AppliedFor {
   font-weight: 900;
-
 }
 
-
-@media screen and (max-width:625px){
-
+@media screen and (max-width: 625px) {
   .sidebar h2 {
+    font-size: 18px;
+  }
 
-   font-size: 18px;
- }
-
- .sidebar p {
-  font-size: 15px;
- }
+  .sidebar p {
+    font-size: 15px;
+  }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px) {
+  .sidebar h2 {
+    font-size: 15px;
+  }
 
-  .sidebar h2{
-
-   font-size: 15px;
- }
-
- .sidebar p {
-  font-size: 11px;
- }
+  .sidebar p {
+    font-size: 11px;
+  }
 }
 
-@media screen and (max-width:625px){
+@media screen and (max-width: 625px) {
+  .main h2 {
+    font-size: 18px;
+  }
 
-  .main h2{
+  .main p, .main li {
+    font-size: 15px;
+  }
+}
 
-   font-size: 18px;
- }
+@media screen and (max-width: 425px) {
+  .main h2 {
+    font-size: 15px;
+  }
 
- .main p , .main li{
-  font-size: 15px;
- }
-} 
-
-@media screen and (max-width:425px){
-
-  .main h2{
-
-   font-size: 15px;
- }
-
- .main p , .main li{
-  font-size: 11px;
- }
-} 
-
-
+  .main p, .main li {
+    font-size: 11px;
+  }
+}

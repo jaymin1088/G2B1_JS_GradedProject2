@@ -5,7 +5,7 @@ body {
   border: 5px solid black;
   height: 100vh;
   width: auto;
-  background: grey;
+  background: lavender;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  background: yellow;
+  background: cornsilk;
   height: 50%;
   width: 500px;
   box-shadow: 0 0 4px black;
@@ -60,6 +60,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 #password {
@@ -68,6 +69,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .btn {
@@ -75,12 +77,12 @@ body {
   border-radius: 3px;
   transform: translate(160%);
   font-size: 1rem;
-  background: yellowgreen;
+  background: lavenderblush;
 }
 
 .btn:hover {
   cursor: pointer;
   transition: 0.4s;
-  background: black;
-  color: white;
+  background: aliceblue;
+  color: red;
 }
