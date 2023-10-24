@@ -114,7 +114,7 @@ for(i=1;i<=((data.resume[k].interests.hobbies).length);i++)
 
 
 let company=document.querySelector(".company")
-company.innerText = `${data.resume[k].work["company name"]}`
+company.innerText = `${data.resume[k].work["Company"]}`
 
 let position=document.querySelector(".workingpostion")
 position.innerText = `${data.resume[k].work.Position}`
@@ -149,8 +149,8 @@ school.innerText = `${data.resume[k].education["High School"].institute},${data.
 
 
 
-let intern_company=document.querySelector(".intern_company")
-intern_company.innerText = `${data.resume[k].Internship["company name"]}`
+let intern_company=document.querySelector(".intercompany")
+intern_company.innerText = `${data.resume[k].Internship["intern_company"]}`
 
 let intern_postion=document.querySelector(".intern_postion")
 intern_postion.innerText = `${data.resume[k].Internship.Position}`
