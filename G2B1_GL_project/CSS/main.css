@@ -189,3 +189,10 @@ button:hover {
     font-size: 11px;
   }
 }
+
+/* Add ellipsis for text overflow */
+.info, .phone, .email, .link, .tech, .hobbies {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
