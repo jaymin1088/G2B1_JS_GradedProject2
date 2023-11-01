@@ -92,7 +92,8 @@ img {
   padding: 5%;
 }
 
-.info p, .info a {
+.info p,
+.info a {
   text-align: end;
 }
 
@@ -106,7 +107,8 @@ img {
   padding-right: 8%;
 }
 
-.main p, .main li {
+.main p,
+.main li {
   margin-left: 9%;
   margin-top: 1px;
   margin-bottom: 1px;
@@ -146,7 +148,8 @@ button:hover {
   align-items: center;
 }
 
-.header p, .AppliedFor {
+.header p,
+.AppliedFor {
   font-weight: 900;
 }
 
@@ -175,7 +178,8 @@ button:hover {
     font-size: 18px;
   }
 
-  .main p, .main li {
+  .main p,
+  .main li {
     font-size: 15px;
   }
 }
@@ -185,13 +189,19 @@ button:hover {
     font-size: 15px;
   }
 
-  .main p, .main li {
+  .main p,
+  .main li {
     font-size: 11px;
   }
 }
 
 /* Add ellipsis for text overflow */
-.info, .phone, .email, .link, .tech, .hobbies {
+.info,
+.phone,
+.email,
+.link,
+.tech,
+.hobbies {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

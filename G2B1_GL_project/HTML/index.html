@@ -1,15 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="../CSS/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
+
 <body>
     <div class="top-nav">
         <a href="../HTML/login.html" id="logout">Logout</a>
@@ -20,98 +21,98 @@
         <input type="text" class="filterbox" placeholder="enter job full name and press enter">
         <button id="next" onclick="forward()">Next</button>
     </div>
-  
-  <!--  resume DIV  -->
+
+    <!--  resume DIV  -->
     <div class="resumebox">
-  
-  
-        <div class="header"> 
-            <div class="header-info">  
-                  <h2 class="names">j</h2>
-                  <p class="apply"> AppliedFor: <span class="AppliedFor"></span></p>
+
+
+        <div class="header">
+            <div class="header-info">
+                <h2 class="names">j</h2>
+                <p class="apply"> AppliedFor: <span class="AppliedFor"></span></p>
             </div>
             <div class="image">
-                  <img src="../other/logo.jpeg" >
-            </div>
-        </div>
-             
- 
-        <div class="sidebar">
-            <div class="info ellipsis"> 
-                  <h2> Pesonal Information </h2>
-                  <p class="phone ellipsis" ></p>
-                  <p class="email ellipsis"></p>
-                  <p><a class="link ellipsis" href="#" >Linkdin</a></p>
-                  <h2> Technical Skills </h2>
-                  <p class="tech ellipsis"></p>
-                  <h2 > Hobbies </h2>
-                  <p class="hobbies ellipsis"></p>
+                <img src="../other/logo.jpeg">
             </div>
         </div>
 
- 
+
+        <div class="sidebar">
+            <div class="info ellipsis">
+                <h2> Pesonal Information </h2>
+                <p class="phone ellipsis"></p>
+                <p class="email ellipsis"></p>
+                <p><a class="link ellipsis" href="#">Linkdin</a></p>
+                <h2> Technical Skills </h2>
+                <p class="tech ellipsis"></p>
+                <h2> Hobbies </h2>
+                <p class="hobbies ellipsis"></p>
+            </div>
+        </div>
+
+
         <div class="content">
             <div class="main">
-            <div class="work">          
-                  <h2>Work Experience in previous company</h2>
-                  <p><b>Company Name:</b></span><span class="company"></span></p>
-                  <p><b>Position: </b><span class="workingpostion"></span></p>
-                  <p><b>Start Date: </b> <span class="sd"></span></p>
-                  <p><b>End Date: </b><span class="ed"></span></p>
-                  <p><b>Summary: </b><span class="worksummary"></span></p>
-            </div>
-            <div class="projects">
-                  <h2>Projects</h2>
-                  <p><b class="projectname"></b><span class="description"></span></p>
-            </div>
-            <div class="education">
-                  <h2>Education</h2>
-                  <ul>
-                      <li><b>UG:</b><span class="ug"></span></li>
-                      <li><b>PU:</b><span class="pu"></span></li>
-                      <li><b>High School:</b><span class="school"></span></li>
-                  </ul>
-            </div>
-            <div class="internship">
-                  <h2>Internship</h2>
-                  <ul>
-                       <li><b>Company Name:</b><span class="intercompany"></span></li>
-                       <li><b>Position:</b><span class="intern_postion"></span></li>
-                       <li><b>Start Date:</b><span class="intern_startdate"></span></li>
-                       <li><b>End Date:</b><span class="intern_enddate"></span></li>
-                       <li><b>Summary:</b><span class="intern_summary"></span></li>
-                  </ul>
-            </div>
-                   <h2>Achievements</h2>
-            <div >
-                   <ul class="achievements" >
-                   </ul>
-            </div>
+                <div class="work">
+                    <h2>Work Experience in previous company</h2>
+                    <p><b>Company Name:</b></span><span class="company"></span></p>
+                    <p><b>Position: </b><span class="workingpostion"></span></p>
+                    <p><b>Start Date: </b> <span class="sd"></span></p>
+                    <p><b>End Date: </b><span class="ed"></span></p>
+                    <p><b>Summary: </b><span class="worksummary"></span></p>
+                </div>
+                <div class="projects">
+                    <h2>Projects</h2>
+                    <p><b class="projectname"></b><span class="description"></span></p>
+                </div>
+                <div class="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li><b>UG:</b><span class="ug"></span></li>
+                        <li><b>PU:</b><span class="pu"></span></li>
+                        <li><b>High School:</b><span class="school"></span></li>
+                    </ul>
+                </div>
+                <div class="internship">
+                    <h2>Internship</h2>
+                    <ul>
+                        <li><b>Company Name:</b><span class="intercompany"></span></li>
+                        <li><b>Position:</b><span class="intern_postion"></span></li>
+                        <li><b>Start Date:</b><span class="intern_startdate"></span></li>
+                        <li><b>End Date:</b><span class="intern_enddate"></span></li>
+                        <li><b>Summary:</b><span class="intern_summary"></span></li>
+                    </ul>
+                </div>
+                <h2>Achievements</h2>
+                <div>
+                    <ul class="achievements">
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-                 
+
     <div class="errorpage">
-              <img src="../other/smiley.png" >
-              <p>Invalid search or No applications for this job. <a href="javascript:location.reload();">Reload Page</a></p>
+        <img src="../other/smiley.png">
+        <p>Invalid search or No applications for this job. <a href="javascript:location.reload();">Reload Page</a></p>
     </div>
-    
-                 
+
+
 </body>
-  
-   <script src="../JS/main.js" type="text/javascript"></script>
-   <script src="../JS/filterdata.js" type="text/javascript"></script>
-   <script>
+
+<script src="../JS/main.js" type="text/javascript"></script>
+<script src="../JS/filterdata.js" type="text/javascript"></script>
+<script>
+    window.history.forward();
+    function noBack() {
         window.history.forward();
-        function noBack() {
-            window.history.forward();
-        }
-        const searchInput = document.querySelector(".filterbox");
+    }
+    const searchInput = document.querySelector(".filterbox");
     searchInput.addEventListener("input", function () {
         if (searchInput.value === "") {
             location.reload();
         }
     }); 
-   </script>
+</script>
 
 </html>

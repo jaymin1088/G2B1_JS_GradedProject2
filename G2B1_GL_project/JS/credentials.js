@@ -1,4 +1,6 @@
-const credentials = [{
-    username : 'admin',
-    password : '1234'
-}]
+const credentials = [
+  {
+    username: "admin",
+    password: "1234",
+  },
+];
